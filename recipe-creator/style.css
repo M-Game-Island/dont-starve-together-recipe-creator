@@ -1,0 +1,45 @@
+
+body {
+    background-image: url("background.jpg");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#div-init-menu {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    border-radius: 20px;
+}
+
+input[type="text"],
+button {
+  margin: 10px;
+  font-size: 16px;
+}
+
+#div-mod-creator {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+label, .white {
+    color: white;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Starve Together - Recipe Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+
+    <div id="div-init-menu">
+      <input type="text" name="text-mod-name" id="text-mod-name" placeholder="Mod name">
+      <button type="button" onclick="onClickNewRecipeMod();">New recipe mod</button>
+    </div>
+
+    <div id="div-mod-creator">
+
+      <!-- Mod name -->
+      <div>
+        <label for="mod-name">Mod name</label>
+        <input type="text" name="mod-name" id="mod-name">
+      </div>
+
+      <div>
+        <p class="white">------------------</p>
+
+        <!-- Recipe name -->
+        <div>
+          <label for="recipe-name">Recipe name</label>
+          <input type="text" name="recipe-name" id="recipe-name" placeholder="Item code">
+        </div>
+
+        <!-- Recipe tab (ingame menu tab) -->
+        <!-- TODO: complete recipe tabs -->
+        <div>
+          <label for="recipe-tab">Recipe tab</label>
+          <select name="recipe-tab" id="recipe-tab">
+            <option value="recipe-tab-refine">Refine</option>
+          </select>
+        </div>
+
+        <!-- Recipe tech -->
+        <!-- TODO: complete recipe techs -->
+        <div>
+          <label for="recipe-tech">Recipe tech</label>
+          <select name="recipe-tech" id="recipe-tech">
+            <option value="recipe-tech-science-one">SCIENCE ONE</option>
+            <option value="GLOBAL.TECH.ALCHEMY">ALCHEMY ENGINE</option>
+          </select>
+        </div>
+
+        <!-- List of items (components of a recipe) -->
+        <div id="recipe-item-list"></div>
+
+        <!-- Menu to add items (components) into a recipe -->
+        <div>
+          <label for="item-name">Recipe item</label>
+          <input type="text" name="item-name" id="item-name" placeholder="Item code">
+          <input type="number" name="item-amount" id="item-amount">
+          <button type="button" onclick="onClickAddItem();">+</button>
+        </div>
+
+        <!-- Save recipe (not mod) -->
+        <button type="button" onclick="onClickAddRecipe();">Save recipe</button>
+
+        <p class="white">------------------</p>
+
+      </div>
+
+      <button type="button">Save mod</button>
+
+    </div>
+  </body>
+
+</html>
